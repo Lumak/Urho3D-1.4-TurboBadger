@@ -66,7 +66,7 @@ public:
 //=============================================================================
 class UTBRendererBatcher : public UIElement, public TBRendererBatcher
 {
-    OBJECT( UTBRendererBatcher )
+    URHO3D_OBJECT( UTBRendererBatcher, UIElement )
 public:
     // static funcs
     static void Create(Context *_pContext, int _iwidth, int _iheight)

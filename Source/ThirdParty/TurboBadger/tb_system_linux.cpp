@@ -32,9 +32,10 @@ double TBSystem::GetTimeMS()
 
 // Implementation currently done in port_glut.cpp.
 // FIX: Implement here for linux-desktop/android/macos?
-//void TBSystem::RescheduleTimer(double fire_time)
-//{
-//}
+// uncommented for Linux
+void TBSystem::RescheduleTimer(double)
+{
+}
 
 int TBSystem::GetLongClickDelayMS()
 {

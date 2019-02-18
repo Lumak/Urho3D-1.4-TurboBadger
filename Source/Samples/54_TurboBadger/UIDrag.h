@@ -43,16 +43,16 @@ using namespace Urho3D;
 using namespace tb;
 
 //=====================================
-EVENT(E_TBMSG, TBMessageNamespace)
+URHO3D_EVENT(E_TBMSG, TBMessageNamespace)
 {
-    PARAM(P_TBWIDGET, Widget);  // TBWidget pointer
+    URHO3D_PARAM(P_TBWIDGET, Widget);  // TBWidget pointer
 }
 
 //=============================================================================
 //=============================================================================
 class UTBListener : public Object, public TBWidgetListener
 {
-    OBJECT(UTBListener);
+    URHO3D_OBJECT(UTBListener, Object);
 public:
     UTBListener(Context *context);
 
@@ -83,7 +83,7 @@ protected:
 ///     - Subscribing to GUI drag events and handling them.
 class UIDrag : public Sample
 {
-    OBJECT(UIDrag);
+    URHO3D_OBJECT(UIDrag, Sample);
 
 public:
     /// Construct.

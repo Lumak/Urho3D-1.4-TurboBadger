@@ -1,6 +1,11 @@
+# Urho3D-TurboBadger
+Building on Lumaks, Emils and others work, bring this code up to the latest Urho3d version.
+Merge in Some Atomic Game Engine styles, widgets and other enhancements/fixes.
+
+
 # Urho3D-1.4-TurboBadger
 
-This work is integration of TurboBadger to Urho3D engine vrsion 1.4.
+This work is integration of TurboBadger to Urho3D engine version 1.4.
 
 -----------------------------------------------------------------------------------
 Features

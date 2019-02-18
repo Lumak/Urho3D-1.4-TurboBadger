@@ -30,7 +30,7 @@
 
 //=============================================================================
 //=============================================================================
-DEFINE_APPLICATION_MAIN(UIDrag)
+URHO3D_DEFINE_APPLICATION_MAIN(UIDrag)
 
 
 //=============================================================================
@@ -84,7 +84,7 @@ void UIDrag::Start()
     pTBListener_ = new UTBListener( GetContext() );
     pTBListener_->CreateMsgWindow();
 
-    SubscribeToEvent(E_TBMSG, HANDLER(UIDrag, HandleTBMessage));
+    SubscribeToEvent(E_TBMSG, URHO3D_HANDLER(UIDrag, HandleTBMessage));
 }
 
 void UIDrag::Stop()
